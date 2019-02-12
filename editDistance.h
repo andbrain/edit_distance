@@ -9,9 +9,10 @@ namespace ed_classic{
     /* data */
     std::string query;
     std::string data;
+    size_t tau;
     int **M;
   public:
-    editDistance (std::string query, std::string data);
+    editDistance (std::string query, std::string data, size_t tau);
     ~editDistance ();
     std::string process();
     void initMatrix(int lines, int columns);
